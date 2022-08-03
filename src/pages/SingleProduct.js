@@ -15,7 +15,7 @@ const SingleProduct = ({ prod }) => {
           {prod.fastDelivery ? <div>Fast Delivery</div> : <div>4 days for Delivery</div>}
           <Rating rating={prod.ratings}/>
           </Card.Subtitle>
-          {cart.some(p => p.id === prod.id) ? (<Button variant="danger" style={{margin: "5px"}}
+          {cart.some(p => p.id === prod.id) ? (<Button variant="danger" 
           onClick={() => {
             dispatch({
               type: "REMOVE_FROM_CART",
