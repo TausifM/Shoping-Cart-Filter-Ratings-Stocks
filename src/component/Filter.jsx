@@ -9,7 +9,7 @@ const Filter = () => {
      filterDispatch} = CartState();
      console.log(byStock, byRating, byFastDelivery, searchQuery, sort);
   return (
-    <div className="filter">
+    <div className="filters">
         <span className="filter-title">Filter Products</span>
         <span>
             <Form.Check 
