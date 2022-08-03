@@ -24,7 +24,7 @@ const Header = () => {
           <Nav>
               <Dropdown align>
                   <Dropdown.Toggle variant="success" >
-                      <FaShoppingCart color="white" fontSize="25px" />
+                      <Link to="/cart"><FaShoppingCart color="white" fontSize="25px" /></Link>
                       <Badge>{cart.length}</Badge>
                       </Dropdown.Toggle>
                       <Dropdown.Menu style={{minWidth: 330}}>
