@@ -2,6 +2,8 @@ import { createContext, useContext, useReducer } from "react";
 import faker from '@faker-js/faker'
 import { cartReducer } from "./Reducer";
 const Cart = createContext();
+// for signle data it will not change on every render
+faker.seed(99);
 const Context = ({ children }) => {
   const products = [...Array(20)].map(() => ({
     id: faker.datatype.uuid(),
